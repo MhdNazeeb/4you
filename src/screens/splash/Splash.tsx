@@ -1,16 +1,23 @@
 import { View, Text, Image } from 'react-native'
 import React, { useEffect } from 'react'
+import { BlurView } from "@react-native-community/blur";
 
-const Splash = () => {
-    useEffect(()=>{
-        console.log('reach heare');
-        
-    },[])
+
+const Splash = ({ navigation }: any) => {
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      navigation.navigate('home');
+    }, 2000);
+
+  }, [])
   return (
-    <View style={{flex:1,backgroundColor:"red"}}>
-        
-        {/* <Image src='../aasetes/images/logo.png'/> */}
-        <Text style={{color:"black"}}>fgafe</Text>
+    <View  >
+
+      <Image
+        source={require('../../assetes/images/logo.png')}
+        style={{ width: 100, height: 100 }}
+      />
+
     </View>
   )
 }
