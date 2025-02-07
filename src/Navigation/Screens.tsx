@@ -1,8 +1,9 @@
 export const routeNames = {
-    Spalsh:"splash",
-    Home:"home",
-    Tab:"tab",
-    Main:'main'
-    
+    spalsh: "splash",
+    home: "home",
+    tab: "tab",
+    main: 'main',
+    offerDetails: "offer_details"
+
 
 }

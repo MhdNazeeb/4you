@@ -10,7 +10,7 @@ import type { PropsWithChildren } from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import Navigation from './src/Navigation';
-import { HeaderBackground } from 'react-navigation-stack';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { SafeAreaView, StyleSheet } from 'react-native';
 import Colors from './src/Theme/Colors';
 
@@ -20,7 +20,11 @@ function App(): React.JSX.Element {
   return (
 
     <NavigationContainer >
-      <Navigation />
+      <GestureHandlerRootView style={{ flex: 1 }}>
+
+        <Navigation />
+      </GestureHandlerRootView>
+
     </NavigationContainer>
   );
 }
@@ -30,8 +34,8 @@ function App(): React.JSX.Element {
 export default App;
 
 const styles = StyleSheet.create({
-  screenColor:{
-    backgroundColor:Colors.primery,
+  screenColor: {
+    backgroundColor: Colors.primery,
 
   }
 })

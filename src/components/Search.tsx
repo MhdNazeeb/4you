@@ -27,6 +27,8 @@ const Search: React.FC<searchProps> = ({ width, height, marginTop, borderRadius 
                     placeholder="Search"
                     value={searchText}
                     onChangeText={(text) => setSearchText(text)}
+                    placeholderTextColor={Colors.textPrimery}
+
                 />
             </View>
 
@@ -40,18 +42,16 @@ const styles = StyleSheet.create({
     searchContainer: {
         width: getWidth(1.04),
         backgroundColor: Colors.secondery,
-        height: getWidth(8),
-        marginTop: getWidth(50),
-        borderRadius: getWidth(32),
+        height: getWidth(11),
+        marginTop: getWidth(25),
+        borderRadius: getWidth(44),
         paddingLeft: getWidth(30),
         display: 'flex',
         flexDirection: 'row',
         alignItems: 'center'
     },
     input: {
-        flex: 1,
         height: getWidth(8),
-        width: getWidth(1.04),
         fontSize: getWidth(30),
         color: lightenColor(Colors.textPrimery, 3)
     },

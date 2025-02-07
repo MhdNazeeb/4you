@@ -1,5 +1,5 @@
-import {Platform, StyleSheet} from 'react-native';
-import {getHeight, getWidth} from './constens';
+import { Platform, StyleSheet } from 'react-native';
+import { getHeight, getWidth } from './constens';
 import Colors from './Colors';
 
 const CommonStyles = StyleSheet.create({
@@ -11,10 +11,10 @@ const CommonStyles = StyleSheet.create({
     fontFamily: 'Inter',
   },
   titleText: {
-    fontSize: getHeight(60),
-    fontWeight: '200',
+    fontSize: getHeight(70),
+    fontWeight: '500',
     fontFamily: 'Inter',
-    color:Colors.textPrimery
+    color: Colors.textPrimery
   },
   appNameTitle: {
     fontSize: getHeight(35),
@@ -29,11 +29,7 @@ const CommonStyles = StyleSheet.create({
   },
   mainContainer: {
     flex: 1,
-    // paddingTop: getWidth(60),
-    // paddingLeft:getWidth(60),
-    // paddingRight:getWidth(60),
-    minHeight: getHeight(1),
-    padding:getWidth(60)
+    padding: getWidth(60)
   },
   centerContainer: {
     flex: 1,
@@ -42,7 +38,7 @@ const CommonStyles = StyleSheet.create({
   },
   containerFlex1: {
     flex: 1,
-    
+
   },
   font45bold: {
     fontSize: getHeight(45),
@@ -52,7 +48,7 @@ const CommonStyles = StyleSheet.create({
   errorText: {
     marginTop: getHeight(190),
   },
-  flexRowContainer: {flexDirection: 'row'},
+  flexRowContainer: { flexDirection: 'row' },
   warningAlert: {
     backgroundColor: '#FFFFFF',
     color: '#000000',
@@ -91,8 +87,8 @@ const CommonStyles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-  parentContainer:{
-    width:getWidth(1.04),
+  parentContainer: {
+    width: getWidth(1.04),
   }
 });
 
